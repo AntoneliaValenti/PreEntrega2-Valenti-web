@@ -28,6 +28,10 @@ a:link{
 .na{
     color: blueviolet;
 }
+.in{
+    color: rgb(58, 11, 80);
+    font-family: cursive;
+}
 a:link {
     color: rgb(46, 5, 48);
 }
