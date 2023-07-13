@@ -21,6 +21,19 @@ h1{
     text-align: center;
     margin: 10%;
 }
+a:link{
+    text-decoration-line: none;
+    text-decoration-color: none;
+}
+.na{
+    color: blueviolet;
+}
+a:link {
+    color: rgb(46, 5, 48);
+}
+a:hover{
+    background-color: beige;
+}
 #music{
     width: 400px;
     height: 400px;
@@ -95,7 +108,7 @@ header{
     justify-content: space-between;
     margin: 10%
 }
-.navbar {
+.navbar{
     overflow: hidden;
     background-color: rgb(216, 201, 226);
     position: relative;
