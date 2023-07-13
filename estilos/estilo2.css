@@ -2,7 +2,7 @@
     margin: 0%;
 }
 body{
-    background: rgb(231, 221, 231)
+     background: rgb(231, 221, 231);
 }
 h1{
     text-align: center;
@@ -21,7 +21,6 @@ h1{
     text-align: center;
     margin: 10%;
 }
-
 #music{
     width: 400px;
     height: 400px;
@@ -63,8 +62,6 @@ h1{
     margin: auto;
 }
 
-
-
 .grid{
     display: grid;
     grid-template-columns:  30% auto;
@@ -92,30 +89,27 @@ header{
     grid-area: imgg;
 }
 
-
 .firm{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10%
 }
-
 .navbar {
     overflow: hidden;
     background-color: rgb(216, 201, 226);
     position: relative;
   }
-  
-  .carousel{
+
+.carousel{
     width: 500px;
     height: 500px;
     @media only screen and (max-width: 576px) {
         width: 300px;
         height: 300px;
        }
-  }
-
-  .formulario{
+}
+.formulario{
     width: 300px;
     height: 370px;
     background-color: rgb(155, 102, 204);
@@ -127,9 +121,8 @@ header{
     margin: auto;
     margin-top: 20px;
     padding: 15px;
-  }
-
-  .galeria{
+}
+.galeria{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -137,13 +130,12 @@ header{
     height: 200px;
     margin: auto;
     margin-block-end: 20px;
-  }
-
-  .button{
+}
+.button{
     margin: auto;
     padding: auto;
-  }
-  .p-music{
+}
+.p-music{
     width: 500px;
     height: 500px;
     margin: auto;
@@ -157,23 +149,23 @@ header{
     @media only screen and (max-width: 576px) {
        display: none;
     }
-  }
+}
   #obras{
     margin-top: 50px;
-  }
-  ul{
+}
+ul{
     list-style: none;
     margin-top: 30px;
-  }
-  .bio{
+}
+.bio{
     margin-top: 50px;
-  }
+}
 
-  #carouselExampleControls{
+#carouselExampleControls{
     margin: auto;
     margin-block-end: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-  }
+}
