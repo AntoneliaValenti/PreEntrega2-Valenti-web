@@ -4,17 +4,23 @@
 }
 h1{
     text-align: center;
-    background-color: rgba(215, 186, 243, 0.781);
     font-size: 80px;
-    font-family: 'WindSong', cursive;
+    font-family: 'WindSong', cursive; 
+    display: inline;
+    width: 100%;
+    height: 200px;
 }
+
+header{
+    background-color: rgb(216, 201, 226);
+} 
+.titulo{
+    text-align: center;
+}
+   
 .nombre{
     font-family:'WindSong', cursive;
 }
-body{
-    background: rgb(231, 221, 231);
-}
-
 #container{
     font-family: 'Caveat', cursive;
     text-align: center;
@@ -30,10 +36,17 @@ a:link{
     text-decoration-line: none;
     text-decoration-color: none;
 }
-.na{
-    color: blueviolet;
+.navbar{
     font-family: 'Caveat', cursive;
-}
+    font-size: 20px;
+    /*overflow: hidden;*/
+    background-color: rgb(216, 201, 226);
+    
+  }
+  .collapse{
+    background-color: rgb(216, 201, 226);
+    
+  }
 .in{
     color: rgb(58, 11, 80);
     font-family: 'Caveat', cursive;
@@ -83,11 +96,7 @@ a:hover{
         display: none;
     }
 }
-.mapa{
-    width: 250px;
-    height: 250px;
-    margin: auto;
-}
+
 
 .grid{
     display: grid;
@@ -105,6 +114,7 @@ a:hover{
 header{
     grid-area: titulo;
  }
+
 .par1{
     grid-area: p1;
 }
@@ -183,16 +193,28 @@ header{
 }
 .firm{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 10%
+    
 }
-.navbar{
-    overflow: hidden;
-    background-color: rgb(216, 201, 226);
-    position: relative;
-  }
-
+.h4{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 25%;
+    padding: 10%;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+.p-mapa{
+    margin: auto;
+}
+.mapa{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
 .carousel{
     width: 500px;
     height: 500px;
@@ -243,12 +265,15 @@ header{
        display: none;
     }
 }
-  #obras{
+.obras{
     margin-top: 50px;
 }
 ul{
     list-style: none;
-    margin-top: 30px;
+}
+li{
+    list-style: none;
+    
 }
 .bio{
     margin-top: 50px;
@@ -260,8 +285,4 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.fa{
-    width: 10px;
-    height: 10px;
 }
