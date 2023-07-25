@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=WindSong:wght@500&display=swap");
+.firm {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10%;
+}
+
+@media (max-width: 576px) {
+  .firm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+  }
+}
+.p-mapa {
+  margin: auto;
+}
+
+.mapa {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .mapa {
+    width: auto;
+    height: auto;
+  }
+}
+ul {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+ul li:hover {
+  background-color: beige;
+}
+ul li a:link {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+}
+
+#obras ul {
+  list-style: none;
+  margin-top: 50px;
+}
+#obras ul li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "WindSong", cursive;
+  display: inline;
+}
+
+.titulo {
+  text-align: center;
+  margin: 7px;
+}
+
+.nombre {
+  font-family: "WindSong", cursive;
+}
+
+.par1 {
+  background-color: black;
+  color: beige;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: inline;
+}
+
+@media (max-width: 576px) {
+  .par1 {
+    width: auto;
+    height: auto;
+  }
+}
+#container {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  text-decoration-line: none;
+  text-decoration-color: none;
+}
+
+.content {
+  background-color: beige;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  margin: 10%;
+  font-size: 25px;
+}
+
+.h4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 25%;
+  padding: 10%;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 576px) {
+  .h4 {
+    width: auto;
+    height: auto;
+  }
+}
+.p-music {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: rgb(248, 210, 210);
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p-music #music {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .p-music {
+    display: none;
+  }
+}
+.planeta {
+  font-family: "WindSong", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  width: 200px;
+  height: 100px;
+}
+
+.pedi {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  width: 100%;
+  margin-top: 10%;
+  padding: 10px;
+}
+
+.bio {
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 40% 15% 10% 50% 50px;
+  grid-template-areas: "titulo titulo" "imagen i2" "p1 p1" "tit-vta tit-vta" "vta vta" "pie pie";
+}
+
+header {
+  grid-area: titulo;
+}
+
+.par1 {
+  grid-area: p1;
+}
+
+#pie {
+  grid-area: pie;
+}
+
+.imgg {
+  grid-area: imagen;
+}
+
+.imgsec-secundaria {
+  grid-area: i2;
+}
+
+.venta-libro {
+  grid-area: vta;
+}
+
+.nombre {
+  grid-area: tit-vta;
+}
+
+.fotos {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.imgg {
+  margin: auto;
+  padding: 5%;
+}
+
+.img-1 {
+  width: 500px;
+  height: 450px;
+  padding: 15%;
+}
+
+@media (max-width: 576px) {
+  .img-1 {
+    width: 180px;
+    height: 180px;
+  }
+}
+.img2 {
+  width: 200px;
+  height: 280px;
+  margin: auto;
+}
+
+.img-secundaria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.imagen-bio {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .imagen-bio {
+    display: none;
+  }
+}
+
+.carousel {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    width: 300px;
+    height: 300px;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-block-end: 20px;
+}
+
+@media (max-width: 576px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-block-end: 20px;
+  }
+}
+#carouselExampleControls {
+  margin: auto;
+  margin-block-end: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rounded-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 30%;
+}
+
+* {
+  margin: 0%;
+}
+
+header {
+  background-color: rgb(216, 201, 226);
+  color: black;
+  padding-top: 4%;
+  width: 100%;
+  height: 180px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.navbar {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.navbar .collapse {
+  background-color: rgb(216, 201, 226);
+}
+
+.venta-libro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 1100px;
+  height: 500px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+}
+.venta-libro a:link {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+}
+
+@media (max-width: 576px) {
+  .venta-libro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    padding: auto;
+  }
+}
+.formulario {
+  width: 300px;
+  height: 370px;
+  background-color: rgb(155, 102, 204);
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+}
+.formulario .button {
+  margin: auto;
+  padding: auto;
+}
+
+#pie {
+  background-color: rgb(182, 119, 241);
+  text-align: center;
+  font-size: 30px;
+}
+#pie a:link {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+}
+#pie .in {
+  color: rgb(46, 5, 48);
+  font-family: "Caveat", cursive;
+}
+
+/*# sourceMappingURL=styles.css.map */

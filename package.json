@@ -1,0 +1,20 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "scss":"sass --watch scss:css",
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoneliaValenti/PreEntrega2-Valenti.git"
+  },
+  "author": "Antonelia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoneliaValenti/PreEntrega2-Valenti/issues"
+  },
+  "homepage": "https://github.com/AntoneliaValenti/PreEntrega2-Valenti#readme"
+}
