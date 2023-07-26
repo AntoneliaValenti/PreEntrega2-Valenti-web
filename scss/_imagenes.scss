@@ -1,6 +1,5 @@
 .fotos{
-    display: flexbox;
-    flex-direction: row;
+    @include flex-row;
         
 }
 .imgg{
@@ -24,8 +23,7 @@
     margin: auto;
 }
 .img-secundaria{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     margin: auto;  
 }
@@ -48,8 +46,7 @@
 }
 
 .galeria{
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: space-around;
     width: 200px;
     height: 200px;
@@ -58,8 +55,7 @@
 }
 @media(max-width: 576px) {
     .galeria{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: space-around;
         width: auto;
         height: auto;
@@ -71,8 +67,7 @@
 #carouselExampleControls{
     margin: auto;
     margin-block-end: 50px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
 }
 .rounded-circle{

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=WindSong:wght@500&display=swap");
 .firm {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin: 10%;
 }
@@ -10,8 +10,8 @@
 @media (max-width: 576px) {
   .firm {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     margin: 10%;
   }
 }
@@ -202,7 +202,7 @@ header {
 }
 
 .fotos {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
 }
 
@@ -341,8 +341,8 @@ header {
 @media (max-width: 576px) {
   .venta-libro {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: auto;
     height: auto;
     border-width: 1px;

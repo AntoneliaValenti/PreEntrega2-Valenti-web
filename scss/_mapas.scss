@@ -1,15 +1,13 @@
 .firm{
-    display: flex;
+    @include flex-row;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
     margin: 10%
 }
 @media(max-width: 576px) {
     .firm{
-    display: flex;
+    @include flex-column;
     align-items: center;
-    flex-direction: column;
     margin: 10%}
 }
 .p-mapa{

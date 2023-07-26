@@ -65,8 +65,7 @@ h1{
     font-family: $font-2;
     font-size: 23px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
  
         #music{
