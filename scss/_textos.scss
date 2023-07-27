@@ -11,6 +11,20 @@ h1{
 .nombre{
     font-family:$font-1;
 }
+.h4{
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+    margin-top: 25%;
+    padding: 10%;
+    align-items: center;
+    @include size(15px, 15px);
+}
+@media(max-width: 576px) {
+    .h4{
+        @include size(auto, auto);
+    }
+}
 .par1{
     background-color: $color-2do;
     color: $color-3ro;
@@ -23,8 +37,7 @@ h1{
 }
 @media(max-width: 576px) {
     .par1{
-        width: auto;
-        height: auto;
+        @include size(auto, auto);
     }
 }
 #container{
@@ -40,25 +53,9 @@ h1{
     margin: 10%;
     font-size: 25px;
 }
-.h4{
-    border-width: $borde2;
-    border-style: $borde;
-    border-color: $color-2do;
-    margin-top: 25%;
-    padding: 10%;
-    align-items: center;
-    width: 15px;
-    height: 15px;
-}
-@media(max-width: 576px) {
-    .h4{
-        width: auto;
-        height: auto;
-    }
-}
+
 .p-music{
-    width: 500px;
-    height: 500px;
+    @include size(500px, 500px);
     margin: auto;
     margin-top: 25px;
     background-color: $color-6to;
@@ -69,10 +66,8 @@ h1{
     justify-content: center;
  
         #music{
-            width: 400px;
-            height: 400px;
-            margin: auto;
-            padding: 20px;
+            @include size(400px, 400px);
+            @include m-p(auto, 20px);
         }
 }       
 @media (max-width: 576px) {
@@ -85,17 +80,19 @@ h1{
     font-size: 30px;
     text-align: center;
     color: $color-2do;
-    width: 200px;
-    height: 100px;
+    @include size(200px, 100px);
+        &:hover{
+            color: $color-5to 
+        }
 
 }
 .pedi{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    margin: 10px;
+    @include m-p(10px, 10px);
     width: 100%;
     margin-top: 10%;
-    padding: 10px;
+   
 }
 .bio{
     margin-top: 50px;
@@ -132,10 +129,7 @@ h1{
     
     .img-club{
         p{
-            font-family: $font-2;
-            font-size: 30px;
-            text-align: center;
-            color: $color-2do;
+            @extend p;
             padding: 30px;
             
         }

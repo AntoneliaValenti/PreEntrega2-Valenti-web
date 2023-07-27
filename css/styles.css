@@ -70,6 +70,23 @@ h1 {
   font-family: "WindSong", cursive;
 }
 
+.h4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 25%;
+  padding: 10%;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 576px) {
+  .h4 {
+    width: auto;
+    height: auto;
+  }
+}
 .par1 {
   background-color: black;
   color: beige;
@@ -102,23 +119,6 @@ h1 {
   font-size: 25px;
 }
 
-.h4 {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  margin-top: 25%;
-  padding: 10%;
-  align-items: center;
-  width: 15px;
-  height: 15px;
-}
-
-@media (max-width: 576px) {
-  .h4 {
-    width: auto;
-    height: auto;
-  }
-}
 .p-music {
   width: 500px;
   height: 500px;
@@ -152,14 +152,17 @@ h1 {
   width: 200px;
   height: 100px;
 }
+.planeta:hover {
+  color: rgb(155, 102, 204);
+}
 
 .pedi {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   margin: 10px;
+  padding: 10px;
   width: 100%;
   margin-top: 10%;
-  padding: 10px;
 }
 
 .bio {
@@ -175,7 +178,7 @@ h1 {
   margin: auto;
   width: 100%;
 }
-.club p {
+.club p, .club .img-club p {
   font-family: "Caveat", cursive;
   font-size: 30px;
   text-align: center;
@@ -190,20 +193,16 @@ h1 {
   font-family: "Caveat", cursive;
 }
 .club p .in:hover {
-  color: rgb(216, 201, 226);
+  color: rgb(186, 122, 230);
 }
 .club .img-club p {
-  font-family: "Caveat", cursive;
-  font-size: 30px;
-  text-align: center;
-  color: black;
   padding: 30px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 40% 15% 10% 50% 50px;
+  grid-template-rows: 10% 30% 25% 10% 50% 50px;
   grid-template-areas: "titulo titulo" "imagen i2" "p1 p1" "tit-vta tit-vta" "vta vta" "pie pie";
 }
 
@@ -355,8 +354,8 @@ header {
 }
 
 header {
-  background-color: rgb(216, 201, 226);
-  color: black;
+  background-color: rgb(186, 122, 230);
+  color: beige;
   padding-top: 4%;
   width: 100%;
   height: 180px;
@@ -375,7 +374,7 @@ header {
   justify-content: flex-end;
 }
 .navbar .collapse {
-  background-color: rgb(216, 201, 226);
+  background-color: rgb(186, 122, 230);
 }
 
 .venta-libro {
@@ -420,8 +419,8 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 20px;
   padding: 15px;
+  margin-top: 20px;
 }
 .formulario .button {
   margin: auto;
@@ -432,7 +431,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(216, 201, 226);
+  background-color: rgb(186, 122, 230);
   text-align: center;
   font-size: 30px;
   border-width: 1px;

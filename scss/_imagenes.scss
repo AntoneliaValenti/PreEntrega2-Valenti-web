@@ -3,23 +3,20 @@
         
 }
 .imgg{
-    margin: auto;
-    padding: 5%;
+    @include m-p(auto, 5%);
 }
 .img-1{
-    width: 500px;
-    height: 450px;
+    @include size(500px, 450px);
     padding: 15%;
 }
 @media (max-width: 576px) {
     .img-1{
-       width: 180px;
-       height: 180px;}
+        @include size(180px, 180px);
+    }
 }
 
 .img2{
-    width: 200px;
-    height: 280px;
+    @include size(200px, 280px);
     margin: auto;
 }
 .img-secundaria{
@@ -28,28 +25,24 @@
     margin: auto;  
 }
 .imagen-bio{
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
 }
 .carousel{
-    width: 500px;
-    height: 500px;
+    @include size(500px, 500px);
 }    
 @media (max-width: 576px) {
     .carousel{
-        width: 300px;
-        height: 300px;
+        @include size(300px, 300px);
     }
 }
 
 .galeria{
     @include flex-row;
     justify-content: space-around;
-    width: 200px;
-    height: 200px;
+    @include size(200px, 200px);
     margin: auto;
     margin-block-end: 20px;
 }
@@ -57,8 +50,7 @@
     .galeria{
         @include flex-column;
         justify-content: space-around;
-        width: auto;
-        height: auto;
+        @include size(auto, auto);
         margin: auto;
         margin-block-end: 20px;
     }
@@ -71,13 +63,11 @@
     justify-content: center;
 }
 .rounded-circle{
-    width: 320px;
-    height: 320px;
+    @include size(320px, 320px);
     border-radius: 30%;
 }
 .instagram{
-    width: 50px;
-    height: 50px;
+    @include size(50px, 50px);
     border-radius: 30%;
 }
 .i-club{
@@ -85,18 +75,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
     border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    margin: auto;
-    padding: 15px;
+    border-style: $borde;
+    border-color: $color-2do;
+    @include m-p(auto, 15px);
     margin-block-end: 20px;
 
     .imag-club{
-        width: 220px;
-        height: 220px;
+        @include size(220px, 220px);
         border-radius: 50%;
         
     }

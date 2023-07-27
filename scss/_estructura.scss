@@ -4,10 +4,9 @@
 
 header{
     background-color: $color-1ro;
-    color: $color-2do;
+    color: $color-3ro;
     padding-top: 4%;
-    width: 100%;
-    height: 180px;
+    @include size(100%, 180px);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
@@ -31,8 +30,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around;
-    width: 1100px;
-    height: 500px;
+    @include size(1100px, 500px);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
@@ -41,31 +39,28 @@ header{
             text-decoration-line: none;
             text-decoration-color: none;
             color: $color-4to}
+            
 }
 @media (max-width: 576px) {
     .venta-libro{
         @include flex-column;
         flex-wrap: nowrap;
-        width: auto;
-        height: auto;
+        @include size(auto, auto);
         border-width: $borde2;
         border-style: $borde;
         border-color: $color-2do;
-        margin: auto;
-        padding: auto;
+        @include m-p(auto, auto);
     }
 }
 .formulario{
-    width: 300px;
-    height: 370px;
+    @include size(300px, 370px);
     background-color: $color-5to;
     font-family: $font-2;
     font-size: 20px;  
    @include flex-column;
     justify-content: center;
-    margin: auto;
+    @include m-p(auto, 15px);
     margin-top: 20px;
-    padding: 15px;
         .button{
             margin: auto;
             padding: auto;
