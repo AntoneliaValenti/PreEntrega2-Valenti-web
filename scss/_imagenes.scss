@@ -1,0 +1,90 @@
+.fotos{
+    @include flex-row;
+        
+}
+.imgg{
+    @include m-p(auto, 5%);
+}
+.img-1{
+    @include size(500px, 450px);
+    padding: 15%;
+}
+@media (max-width: 576px) {
+    .img-1{
+        @include size(180px, 180px);
+    }
+}
+
+.img2{
+    @include size(200px, 280px);
+    margin: auto;
+}
+.img-secundaria{
+    @include flex-column;
+    align-items: center;
+    margin: auto;  
+}
+.imagen-bio{
+    @include size(auto, auto);
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+}
+.carousel{
+    @include size(500px, 500px);
+}    
+@media (max-width: 576px) {
+    .carousel{
+        @include size(300px, 300px);
+    }
+}
+
+.galeria{
+    @include flex-row;
+    justify-content: space-around;
+    @include size(200px, 200px);
+    margin: auto;
+    margin-block-end: 20px;
+}
+@media(max-width: 576px) {
+    .galeria{
+        @include flex-column;
+        justify-content: space-around;
+        @include size(auto, auto);
+        margin: auto;
+        margin-block-end: 20px;
+    }
+}
+
+#carouselExampleControls{
+    margin: auto;
+    margin-block-end: 50px;
+    @include flex-column;
+    justify-content: center;
+}
+.rounded-circle{
+    @include size(320px, 320px);
+    border-radius: 30%;
+}
+.instagram{
+    @include size(50px, 50px);
+    border-radius: 30%;
+}
+.i-club{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    @include size(auto, auto);
+    border-width: 1px;
+    border-style: $borde;
+    border-color: $color-2do;
+    @include m-p(auto, 15px);
+    margin-block-end: 20px;
+
+    .imag-club{
+        @include size(220px, 220px);
+        border-radius: 50%;
+        
+    }
+}

@@ -1,0 +1,138 @@
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: $font-1;
+    display: inline;
+}
+.titulo{
+    text-align: center;
+    margin: 7px;
+}
+.nombre{
+    font-family:$font-1;
+}
+.h4{
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+    margin-top: 25%;
+    padding: 10%;
+    align-items: center;
+    @include size(15px, 15px);
+}
+@media(max-width: 576px) {
+    .h4{
+        @include size(auto, auto);
+    }
+}
+.par1{
+    background-color: $color-2do;
+    color: $color-3ro;
+    font-family: $font-2;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: inline;
+}
+@media(max-width: 576px) {
+    .par1{
+        @include size(auto, auto);
+    }
+}
+#container{
+    font-family: $font-2;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration-color: none;
+}
+.content{
+    background-color: $color-3ro;
+    font-family: $font-2;
+    text-align: center;
+    margin: 10%;
+    font-size: 25px;
+}
+
+.p-music{
+    @include size(500px, 500px);
+    margin: auto;
+    margin-top: 25px;
+    background-color: $color-6to;
+    font-family: $font-2;
+    font-size: 23px;
+    text-align: center;
+    @include flex-column;
+    justify-content: center;
+ 
+        #music{
+            @include size(400px, 400px);
+            @include m-p(auto, 20px);
+        }
+}       
+@media (max-width: 576px) {
+    .p-music{
+        display: none;
+    }
+}
+.planeta{
+    font-family: $font-1;
+    font-size: 30px;
+    text-align: center;
+    color: $color-2do;
+    @include size(200px, 100px);
+        &:hover{
+            color: $color-5to 
+        }
+
+}
+.pedi{
+    font-size: 30px;
+    text-align: center;
+    @include m-p(10px, 10px);
+    width: 100%;
+    margin-top: 10%;
+   
+}
+.bio{
+    margin-top: 50px;
+}
+.club{
+        h2, h3{
+        color: $color-3ro;
+        font-family: $font-2;
+        font-size: 40px;
+        background-color: $color-2do;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        }
+        p{
+            font-family: $font-2;
+            font-size: 30px;
+            text-align: center;
+            color: $color-2do;
+            margin-top: 30px;
+            
+            .in{
+                text-decoration-line: none;
+                text-decoration-color: none;
+                color: rgb(46, 5, 48);
+                color: $color-4to;
+                font-family: $font-2;
+                &:hover{
+                color: $color-1ro; 
+            }
+            } 
+            
+        }
+    
+    .img-club{
+        p{
+            @extend p;
+            padding: 30px;
+            
+        }
+    }
+}
+

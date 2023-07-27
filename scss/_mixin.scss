@@ -1,0 +1,16 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;  
+}
+@mixin size ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+@mixin m-p ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

@@ -1,0 +1,26 @@
+.firm{
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%
+}
+@media(max-width: 576px) {
+    .firm{
+    @include flex-column;
+    align-items: center;
+    margin: 10%}
+}
+.p-mapa{
+    margin: auto;
+}
+.mapa{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+@media(max-width: 576px) {
+    .mapa{
+        width: auto;
+        height: auto;
+    }
+}

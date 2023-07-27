@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+}
+
+header{
+    background-color: $color-1ro;
+    color: $color-3ro;
+    padding-top: 4%;
+    @include size(100%, 180px);
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+} 
+
+.navbar{
+    font-family: $font-2;
+    font-size: 20px;
+    color: $color-2do;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+        .collapse{
+            background-color: $color-1ro;
+        }
+}
+
+.venta-libro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    @include size(1100px, 500px);
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+    margin: auto;
+        a:link{
+            text-decoration-line: none;
+            text-decoration-color: none;
+            color: $color-4to}
+            
+}
+@media (max-width: 576px) {
+    .venta-libro{
+        @include flex-column;
+        flex-wrap: nowrap;
+        @include size(auto, auto);
+        border-width: $borde2;
+        border-style: $borde;
+        border-color: $color-2do;
+        @include m-p(auto, auto);
+    }
+}
+.formulario{
+    @include size(300px, 370px);
+    background-color: $color-5to;
+    font-family: $font-2;
+    font-size: 20px;  
+   @include flex-column;
+    justify-content: center;
+    @include m-p(auto, 15px);
+    margin-top: 20px;
+        .button{
+            margin: auto;
+            padding: auto;
+        }
+}
+
+
+#pie{
+    @include flex-row;
+    justify-content: center;
+    background-color: $color-1ro;
+    text-align: center;
+    font-size: 30px;
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+         
+    .in{
+        text-decoration-line: none;
+        text-decoration-color: none;
+        color: rgb(46, 5, 48);
+        color: $color-4to;
+        font-family: $font-2;
+        &:hover{
+        color: $color-5to 
+    }
+    } 
+}
+
+
+
+
+
+
