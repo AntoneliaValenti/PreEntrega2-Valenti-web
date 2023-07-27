@@ -74,19 +74,25 @@ header{
 
 
 #pie{
-    background-color: rgb(182, 119, 241);
+    @include flex-row;
+    justify-content: center;
+    background-color: $color-1ro;
     text-align: center;
     font-size: 30px;
-        a:link{
-            text-decoration-line: none;
-            text-decoration-color: none;
-            color: $color-4to; 
-        }
-        .in{
-            color: $color-4to;
-            font-family: $font-2;
-        }
-        
+    border-width: $borde2;
+    border-style: $borde;
+    border-color: $color-2do;
+         
+    .in{
+        text-decoration-line: none;
+        text-decoration-color: none;
+        color: rgb(46, 5, 48);
+        color: $color-4to;
+        font-family: $font-2;
+        &:hover{
+        color: $color-5to 
+    }
+    } 
 }
 
 
