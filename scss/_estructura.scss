@@ -24,7 +24,11 @@ header{
             background-color: $color-1ro;
         }
 }
-
+.navbar-toggler{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
 .venta-libro{
     display: flex;
     flex-wrap: wrap;
