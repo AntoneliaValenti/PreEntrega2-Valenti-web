@@ -28,7 +28,7 @@
     .mapa{
         @include size(150px, 150px)
     }
-@media(max-width: 90px) {
+@media(max-width: 390px) {
     .mapa{
         @include size(100px, 100px) 
     }
