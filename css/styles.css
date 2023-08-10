@@ -355,7 +355,7 @@ header {
     margin-block-end: 20px;
   }
 }
-#carouselExampleControls {
+#carouselExample {
   margin: auto;
   margin-block-end: 50px;
   display: flex;
@@ -417,10 +417,14 @@ header {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-items: end;
 }
 .navbar .collapse {
   background-color: rgb(186, 122, 230);
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-items: auto;
 }
 
 .navbar-toggler {

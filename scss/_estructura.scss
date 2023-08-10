@@ -17,11 +17,13 @@ header{
     font-size: 20px;
     color: $color-2do;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+   @include flex-column;
+   justify-items: end;
         .collapse{
             background-color: $color-1ro;
+            display: block;
+            @include flex-column;
+            justify-items: auto;
         }
 }
 .navbar-toggler{
