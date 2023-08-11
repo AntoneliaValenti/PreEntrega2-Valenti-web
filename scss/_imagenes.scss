@@ -22,7 +22,7 @@
 .img-secundaria{
     @include flex-column;
     align-items: center;
-    margin: auto;  
+    margin: auto;
 }
 .imagen-bio{
     @include size(auto, auto);
