@@ -70,7 +70,7 @@ justify-content: flex-end;
     font-size: 20px;  
     @include flex-column;
     justify-content: center;
-    @include m-p(auto, 15px);
+    @include m-p(10px, 15px);
     margin-top: 20px;
         .button{
            @include m-p(auto, auto);
