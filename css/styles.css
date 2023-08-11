@@ -1,18 +1,522 @@
-/* Error: expected "{".
- *    ,
- * 73 |     margin: auto;
- *    |                 ^
- *    '
- *   scss\_imagenes.scss 73:17  @import
- *   scss\styles.scss 10:9      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 73 \2502      margin: auto;\d\a    \2502                  ^\a    \2575 \a   scss\\_imagenes.scss 73:17  @import\a   scss\\styles.scss 10:9      root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=WindSong:wght@500&display=swap");
+.firm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10%;
 }
+
+@media (max-width: 586px) {
+  .firm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+}
+@media (max-width: 390px) {
+  .firm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+}
+.p-mapa {
+  margin: auto;
+}
+
+@media (max-width: 390px) {
+  .firm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+}
+.mapa {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+@media (max-width: 586px) {
+  .mapa {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .mapa {
+    width: 100px;
+    height: 100px;
+  }
+}
+ul {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+ul li:hover {
+  background-color: beige;
+}
+ul li a:link {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+}
+
+#obras ul {
+  list-style: none;
+  margin-top: 50px;
+}
+#obras ul li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "WindSong", cursive;
+  display: inline;
+}
+
+.titulo {
+  text-align: center;
+  margin: 7px;
+}
+
+.nombre {
+  font-family: "WindSong", cursive;
+}
+
+.h4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 25%;
+  padding: 10%;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 586px) {
+  .h4 {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 586px) and (max-width: 390px) {
+  .h4 {
+    width: auto;
+    height: auto;
+  }
+}
+.par1 {
+  background-color: black;
+  color: beige;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: inline;
+}
+
+@media (max-width: 576px) {
+  .par1 {
+    width: auto;
+    height: auto;
+  }
+}
+#container {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  text-decoration-line: none;
+  text-decoration-color: none;
+}
+
+.content {
+  background-color: beige;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  margin: 10%;
+  font-size: 25px;
+}
+
+.p-music {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: rgb(248, 210, 210);
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p-music #music {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+@media (max-width: 586px) {
+  .p-music {
+    width: auto;
+    height: auto;
+  }
+  .p-music #music {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 390px) {
+  .p-music {
+    width: auto;
+    height: auto;
+  }
+  .p-music #music {
+    width: auto;
+    height: auto;
+  }
+}
+.planeta {
+  font-family: "WindSong", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  width: 200px;
+  height: 100px;
+}
+.planeta:hover {
+  color: rgb(155, 102, 204);
+}
+
+.pedi {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.bio {
+  margin-top: 50px;
+}
+
+.club h2, .club h3 {
+  color: beige;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.club p, .club .img-club p {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  margin-top: 30px;
+}
+.club p .in {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+  color: rgb(46, 5, 48);
+  font-family: "Caveat", cursive;
+}
+.club p .in:hover {
+  color: rgb(186, 122, 230);
+}
+.club .img-club p {
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 30% 25% 10% 50% 50px;
+  grid-template-areas: "titulo titulo" "imagen i2" "p1 p1" "tit-vta tit-vta" "vta vta" "pie pie";
+}
+
+header {
+  grid-area: titulo;
+}
+
+.par1 {
+  grid-area: p1;
+}
+
+#pie {
+  grid-area: pie;
+}
+
+.imgg {
+  grid-area: imagen;
+}
+
+.imgsec-secundaria {
+  grid-area: i2;
+}
+
+.venta-libro {
+  grid-area: vta;
+}
+
+.nombre {
+  grid-area: tit-vta;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgg {
+  margin: auto;
+  padding: 5%;
+}
+
+.img-1 {
+  width: 500px;
+  height: 450px;
+  padding: 15%;
+}
+
+@media (max-width: 576px) {
+  .img-1 {
+    width: 180px;
+    height: 180px;
+  }
+}
+.img2 {
+  width: 200px;
+  height: 280px;
+  margin: auto;
+}
+
+.img-secundaria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.imagen-bio {
+  width: auto;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.carousel {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    width: 300px;
+    height: 300px;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-block-end: 20px;
+}
+
+@media (max-width: 586px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-block-end: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-block-end: 20px;
+  }
+}
+#carouselExample {
+  margin: auto;
+  margin-block-end: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rounded-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 30%;
+}
+
+.instagram {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+.i-club {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+  padding: 15px;
+  margin-block-end: 20px;
+}
+.i-club .imag-club {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+* {
+  margin: 0%;
+}
+
+header {
+  background-color: rgb(186, 122, 230);
+  color: beige;
+  padding-top: 4%;
+  width: 100%;
+  height: 180px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.navbar {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+}
+.navbar .collapse {
+  background-color: rgb(186, 122, 230);
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@media (max-width: 586px) {
+  .collapse {
+    top: 0;
+    left: 50%;
+  }
+}
+.navbar-toggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.venta-libro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 1100px;
+  height: 500px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+}
+.venta-libro a:link {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+}
+
+@media (max-width: 576px) {
+  .venta-libro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    padding: auto;
+  }
+}
+.formulario {
+  width: 300px;
+  height: 370px;
+  background-color: rgb(155, 102, 204);
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.formulario .button {
+  margin: auto;
+  padding: auto;
+}
+
+#pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(186, 122, 230);
+  text-align: center;
+  font-size: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+#pie .in {
+  text-decoration-line: none;
+  text-decoration-color: none;
+  color: rgb(46, 5, 48);
+  color: rgb(46, 5, 48);
+  font-family: "Caveat", cursive;
+}
+#pie .in:hover {
+  color: rgb(155, 102, 204);
+}
+
+/*# sourceMappingURL=styles.css.map */

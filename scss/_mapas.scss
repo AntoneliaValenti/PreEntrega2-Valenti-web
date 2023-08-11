@@ -10,6 +10,12 @@
     align-items: center;
     margin: 10%}
 }
+@media(max-width: 390px) {
+    .firm{
+    @include flex-column;
+    align-items: center;
+    margin: 10%}
+}
 .p-mapa{
     margin: auto;
 }
