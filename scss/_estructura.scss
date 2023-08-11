@@ -21,11 +21,6 @@ header{
     overflow: hidden;
     @include flex-column;
     justify-items: end;
-<<<<<<< HEAD
-    top: 0;
-    left: 80%;
-=======
->>>>>>> develop
         .collapse{
             background-color: $color-1ro;
             display: block;
@@ -35,9 +30,15 @@ header{
         }
 }
 @media(max-width: 586px) {
-    .collapse{
+    .navbar{
         top: 0;
-        left: 50%;
+        left: 0%;
+    }
+}
+@media(max-width: 390px) {
+    .navbar{
+        top: 0;
+        left: 30%;
     }
 }
 
@@ -80,7 +81,7 @@ justify-content: flex-end;
     font-size: 20px;  
     @include flex-column;
     justify-content: center;
-    @include m-p(10px, 15px);
+    @include m-p(auto, 15px);
     margin-top: 20px;
         .button{
            @include m-p(auto, auto);
@@ -109,7 +110,11 @@ justify-content: flex-end;
     }
     } 
 }
-
+.button{
+    &:hover{
+        background-color: $color-3ro;
+    }
+}
 
 
 

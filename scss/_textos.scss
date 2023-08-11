@@ -45,6 +45,11 @@ h1{
         @include size(auto, auto);
     }
 }
+@media(max-width: 390px) {
+    .par1{
+        @include size(auto, auto);
+    }
+}
 #container{
     font-family: $font-2;
     text-align: center;
