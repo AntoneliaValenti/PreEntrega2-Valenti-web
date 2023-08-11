@@ -20,9 +20,14 @@ h1{
     align-items: center;
     @include size(15px, 15px);
 }
-@media(max-width: 576px) {
+@media(max-width: 586px) {
     .h4{
         @include size(auto, auto);
+    }
+    @media(max-width: 390px) {
+        .h4{
+            @include size(auto, auto);
+        }
     }
 }
 .par1{
@@ -55,7 +60,7 @@ h1{
 }
 
 .p-music{
-    @include size(500px, 500px);
+    @include size(500px, 300px);
     margin: auto;
     margin-top: 25px;
     background-color: $color-6to;
@@ -66,15 +71,29 @@ h1{
     justify-content: center;
  
         #music{
-            @include size(400px, 400px);
-            @include m-p(auto, 20px);
-        }
-}       
-@media (max-width: 576px) {
+            @include size(400px, 200px);
+            @include m-p(auto, 10px); 
+        }  
+} 
+@media (max-width: 586px) {
     .p-music{
-        display: none;
+        @include size(auto, auto);
+        #music{
+        @include size(auto, auto);
     }
+    }
+    
 }
+@media (max-width: 390px) {
+    .p-music{
+        @include size(auto, auto);
+         #music{
+        @include size(auto, auto);
+    } 
+    }
+    
+}  
+
 .planeta{
     font-family: $font-1;
     font-size: 30px;

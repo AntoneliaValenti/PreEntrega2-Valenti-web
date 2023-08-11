@@ -7,7 +7,7 @@
   margin: 10%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
   .firm {
     display: flex;
     flex-direction: column;
@@ -19,16 +19,30 @@
   margin: auto;
 }
 
+@media (max-width: 390px) {
+  .firm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+}
 .mapa {
   width: 250px;
   height: 250px;
   margin: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
   .mapa {
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 586px) and (max-width: 90px) {
+  .mapa {
+    width: 100px;
+    height: 100px;
   }
 }
 ul {
@@ -81,7 +95,13 @@ h1 {
   height: 15px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
+  .h4 {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 586px) and (max-width: 390px) {
   .h4 {
     width: auto;
     height: auto;
@@ -121,7 +141,7 @@ h1 {
 
 .p-music {
   width: 500px;
-  height: 500px;
+  height: 300px;
   margin: auto;
   margin-top: 25px;
   background-color: rgb(248, 210, 210);
@@ -134,14 +154,29 @@ h1 {
 }
 .p-music #music {
   width: 400px;
-  height: 400px;
+  height: 200px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
   .p-music {
-    display: none;
+    width: auto;
+    height: auto;
+  }
+  .p-music #music {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 390px) {
+  .p-music {
+    width: auto;
+    height: auto;
+  }
+  .p-music #music {
+    width: auto;
+    height: auto;
   }
 }
 .planeta {
@@ -199,7 +234,7 @@ h1 {
   padding: 30px;
 }
 
-.grid {
+.pagina1-grid {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 30% 25% 10% 50% 50px;
@@ -298,7 +333,18 @@ header {
   margin-block-end: 20px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-block-end: 20px;
+  }
+}
+@media (max-width: 390px) {
   .galeria {
     display: flex;
     flex-direction: column;
@@ -381,6 +427,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .venta-libro {

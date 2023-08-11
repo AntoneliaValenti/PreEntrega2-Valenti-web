@@ -46,7 +46,7 @@
     margin: auto;
     margin-block-end: 20px;
 }
-@media(max-width: 576px) {
+@media(max-width: 586px) {
     .galeria{
         @include flex-column;
         justify-content: space-around;
@@ -55,8 +55,21 @@
         margin-block-end: 20px;
     }
 }
+@media(max-width: 390px) {
+    .galeria{
+        @include flex-column;
+        justify-content: space-around;
+        @include size(auto, auto);
+        margin: auto;
+        margin-block-end: 20px;
+    }
+}
+<<<<<<< HEAD
+#carouselExampleControls{
+=======
 
 #carouselExample{
+>>>>>>> develop
     margin: auto;
     margin-block-end: 50px;
     @include flex-column;

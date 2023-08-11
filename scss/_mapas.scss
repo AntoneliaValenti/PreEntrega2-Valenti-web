@@ -4,7 +4,7 @@
     justify-content: space-between;
     margin: 10%
 }
-@media(max-width: 576px) {
+@media(max-width: 586px) {
     .firm{
     @include flex-column;
     align-items: center;
@@ -13,14 +13,24 @@
 .p-mapa{
     margin: auto;
 }
+@media(max-width: 390px) {
+    .firm{
+    @include flex-column;
+    align-items: center;
+    margin: 10%}
+}
 .mapa{
     width: 250px;
     height: 250px;
     margin: auto;
 }
-@media(max-width: 576px) {
+@media(max-width: 586px) {
     .mapa{
-        width: auto;
-        height: auto;
+        @include size(150px, 150px)
     }
+@media(max-width: 390px) {
+    .mapa{
+        @include size(100px, 100px) 
+    }
+}
 }
