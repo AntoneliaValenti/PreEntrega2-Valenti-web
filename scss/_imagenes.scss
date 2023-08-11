@@ -5,11 +5,19 @@
 .imgg{
     @include m-p(auto, 5%);
 }
+
 .img-1{
-    @include size(500px, 450px);
+    @include size(400px, 350px);
     padding: 15%;
 }
 @media (max-width: 576px) {
+    .img-1{
+        @include size(100px, 100px);
+        @include m-p(auto, auto);
+
+    }
+}
+@media (max-width: 390px) {
     .img-1{
         @include size(180px, 180px);
     }

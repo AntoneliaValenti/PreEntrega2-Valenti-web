@@ -109,7 +109,7 @@ h1 {
     height: auto;
   }
 }
-@media (max-width: 586px) and (max-width: 390px) {
+@media (max-width: 390px) {
   .h4 {
     width: auto;
     height: auto;
@@ -250,7 +250,7 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
   grid-template-rows: 10% 30% 25% 10% 50% 50px;
   grid-template-areas: "titulo titulo" "imagen i2" "p1 p1" "tit-vta tit-vta" "vta vta" "pie pie";
 }
@@ -294,12 +294,20 @@ header {
 }
 
 .img-1 {
-  width: 500px;
-  height: 450px;
+  width: 400px;
+  height: 350px;
   padding: 15%;
 }
 
 @media (max-width: 576px) {
+  .img-1 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+  }
+}
+@media (max-width: 390px) {
   .img-1 {
     width: 180px;
     height: 180px;
@@ -417,7 +425,7 @@ header {
   background-color: rgb(186, 122, 230);
   color: beige;
   padding-top: 4%;
-  width: 100%;
+  width: auto;
   height: 180px;
   border-width: 1px;
   border-style: solid;
@@ -431,7 +439,6 @@ header {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-items: end;
 }
 .navbar .collapse {
   background-color: rgb(186, 122, 230);
@@ -443,14 +450,14 @@ header {
 
 @media (max-width: 586px) {
   .navbar {
-    top: 0;
     left: 0%;
   }
 }
 @media (max-width: 390px) {
   .navbar {
-    top: 0;
-    left: 30%;
+    display: flex;
+    flex-direction: column;
+    left: -100px;
   }
 }
 .navbar-toggler {
@@ -465,7 +472,7 @@ header {
   align-items: center;
   justify-content: space-around;
   width: 1100px;
-  height: 500px;
+  height: auto;
   border-width: 1px;
   border-style: solid;
   border-color: black;
@@ -477,7 +484,21 @@ header {
   color: rgb(46, 5, 48);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
+  .venta-libro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    padding: auto;
+  }
+}
+@media (max-width: 390px) {
   .venta-libro {
     display: flex;
     flex-direction: column;
@@ -516,6 +537,8 @@ header {
   background-color: rgb(186, 122, 230);
   text-align: center;
   font-size: 30px;
+  width: auto;
+  height: auto;
   border-width: 1px;
   border-style: solid;
   border-color: black;

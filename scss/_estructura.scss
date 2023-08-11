@@ -6,7 +6,7 @@ header{
     background-color: $color-1ro;
     color: $color-3ro;
     padding-top: 4%;
-    @include size(100%, 180px);
+    @include size(auto, 180px);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
@@ -20,7 +20,6 @@ header{
     color: $color-2do;
     overflow: hidden;
     @include flex-column;
-    justify-items: end;
         .collapse{
             background-color: $color-1ro;
             display: block;
@@ -31,17 +30,16 @@ header{
 }
 @media(max-width: 586px) {
     .navbar{
-        top: 0;
         left: 0%;
     }
 }
 @media(max-width: 390px) {
     .navbar{
-        top: 0;
-        left: 30%;
-    }
+       display: flex;
+       flex-direction: column;
+    left: -100px;
 }
-
+}
 .navbar-toggler{
 display: flex;
 flex-direction: row;
@@ -52,7 +50,7 @@ justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around;
-    @include size(1100px, 500px);
+    @include size(1100px, auto);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
@@ -63,7 +61,18 @@ justify-content: flex-end;
             color: $color-4to}
             
 }
-@media (max-width: 576px) {
+@media (max-width: 586px) {
+    .venta-libro{
+        @include flex-column;
+        flex-wrap: nowrap;
+        @include size(auto, auto);
+        border-width: $borde2;
+        border-style: $borde;
+        border-color: $color-2do;
+        @include m-p(auto, auto);
+    }
+}
+@media (max-width: 390px) {
     .venta-libro{
         @include flex-column;
         flex-wrap: nowrap;
@@ -95,6 +104,7 @@ justify-content: flex-end;
     background-color: $color-1ro;
     text-align: center;
     font-size: 30px;
+    @include size(auto, auto);
     border-width: $borde2;
     border-style: $borde;
     border-color: $color-2do;
