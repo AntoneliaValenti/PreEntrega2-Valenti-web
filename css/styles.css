@@ -372,13 +372,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-items: end;
+  top: 0;
+  left: 30%;
 }
 .navbar .collapse {
   background-color: rgb(186, 122, 230);
   display: block;
   display: flex;
   flex-direction: column;
-  justify-items: auto;
+  justify-content: end;
 }
 
 .venta-libro {

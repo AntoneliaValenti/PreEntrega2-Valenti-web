@@ -12,18 +12,23 @@ header{
     border-color: $color-2do;
 } 
 
+
+
 .navbar{
     font-family: $font-2;
     font-size: 20px;
     color: $color-2do;
     overflow: hidden;
-   @include flex-column;
-   justify-items: end;
+    @include flex-column;
+    justify-items: end;
+    top: 0;
+    left: 30%;
         .collapse{
             background-color: $color-1ro;
             display: block;
             @include flex-column;
-            justify-items: auto;
+            justify-content: end;
+            
         }
 }
 
