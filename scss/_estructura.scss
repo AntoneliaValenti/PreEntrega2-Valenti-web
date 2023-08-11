@@ -68,13 +68,12 @@ justify-content: flex-end;
     background-color: $color-5to;
     font-family: $font-2;
     font-size: 20px;  
-   @include flex-column;
+    @include flex-column;
     justify-content: center;
     @include m-p(auto, 15px);
     margin-top: 20px;
         .button{
-            margin: auto;
-            padding: auto;
+           @include m-p(auto, auto);
         }
 }
 
